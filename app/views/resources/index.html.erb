@@ -1,0 +1,8 @@
+<div>
+  <h1>Advisory Archive</h1>
+  <table class="table">
+    <%= render 'resources/head' %>
+    <%= render partial: 'resources/body', locals: { resources: @resources } %>
+  </table>
+  <%= paginate @resources %>
+</div>
